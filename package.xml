@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" packagerversion="1.4.1" version="2.0" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+  <name>sfNiceFormsPlugin</name>
+ <channel>plugins.symfony-project.org</channel>
+ <summary>NiceForms v2.0 - a non-intrusive javascript method that allows complete customization of web forms</summary>
+ <description>a symfony plugin to implement Niceforms v2.0 from Lucian Slatineanu (http://www.emblematiq.com/lab/niceforms/)</description>
+ <lead>
+  <name>Terry Tsang</name>
+  <user>terrytsang</user>
+  <email>terry@terrytsang.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2011-05-18</date>
+ <time>00:28:36</time>
+ <version>
+  <release>1.0.1</release>
+  <api>1.0.0</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+  <license uri="http://www.symfony-project.org/license">MIT license</license>
+  <notes>-</notes>
+  <contents>
+    <dir name="/">
+    <file role="data" name="README" />
+   	<file role="data" name="LICENSE" />
+   	<file role="data" name="lib/helper/NiceFormsHelper.php" />
+   	<file role="data" name="web/css/default/niceforms.css" />
+   	<file role="data" name="web/css/custom/niceforms.css" />
+   	<file role="data" name="web/js/default/niceforms.js" />
+   	<file role="data" name="web/js/custom/niceforms.js" />
+   	<file role="data" name="web/images/default.psd" />
+   	<file role="data" name="web/images/default/0.png" />
+   	<file role="data" name="web/images/default/button.png" />
+   	<file role="data" name="web/images/default/button-left.png" />
+	<file role="data" name="web/images/default/button-right.png" />
+	<file role="data" name="web/images/default/checkbox.png" />
+	<file role="data" name="web/images/default/file.png" />
+	<file role="data" name="web/images/default/input.png" />
+	<file role="data" name="web/images/default/input-left.png" />
+	<file role="data" name="web/images/default/input-right.png" />
+	<file role="data" name="web/images/default/radio.png" />
+	<file role="data" name="web/images/default/select-left.png" />
+	<file role="data" name="web/images/default/select-right.png" />
+	<file role="data" name="web/images/default/textarea-bl.png" />
+	<file role="data" name="web/images/default/textarea-br.png" />
+	<file role="data" name="web/images/default/textarea-l-off.png" />
+	<file role="data" name="web/images/default/textarea-l-over.png" />
+	<file role="data" name="web/images/default/textarea-r-off.png" />
+	<file role="data" name="web/images/default/textarea-r-over.png" />
+	<file role="data" name="web/images/default/textarea-tl.png" />
+	<file role="data" name="web/images/default/textarea-tr.png" />
+	<file role="data" name="web/images/custom/0.png" />
+   	<file role="data" name="web/images/custom/button.png" />
+   	<file role="data" name="web/images/custom/button-left.png" />
+	<file role="data" name="web/images/custom/button-right.png" />
+	<file role="data" name="web/images/custom/checkbox.png" />
+	<file role="data" name="web/images/custom/file.png" />
+	<file role="data" name="web/images/custom/input.png" />
+	<file role="data" name="web/images/custom/input-left.png" />
+	<file role="data" name="web/images/custom/input-right.png" />
+	<file role="data" name="web/images/custom/radio.png" />
+	<file role="data" name="web/images/custom/select-left.png" />
+	<file role="data" name="web/images/custom/select-right.png" />
+	<file role="data" name="web/images/custom/textarea-bl.png" />
+	<file role="data" name="web/images/custom/textarea-br.png" />
+	<file role="data" name="web/images/custom/textarea-l-off.png" />
+	<file role="data" name="web/images/custom/textarea-l-over.png" />
+	<file role="data" name="web/images/custom/textarea-r-off.png" />
+	<file role="data" name="web/images/custom/textarea-r-over.png" />
+	<file role="data" name="web/images/custom/textarea-tl.png" />
+	<file role="data" name="web/images/custom/textarea-tr.png" />
+  </dir>
+  </contents>
+  <dependencies>
+    <required>
+      <php>
+        <min>5.2.4</min>
+      </php>
+      <pearinstaller>
+        <min>1.4.1</min>
+      </pearinstaller>
+      <package>
+      	<name>symfony</name>
+      	<channel>pear.symfony-project.com</channel>
+      	<min>1.3.0</min>
+      	<max>1.5.0</max>
+      	<exclude>1.5.0</exclude>
+      </package>
+    </required>
+  </dependencies>
+  <phprelease></phprelease>
+  <changelog>
+  <release>
+    <version>
+      <release>1.0.1</release>
+      <api>1.0.0</api>
+    </version>
+    <stability>
+      <release>stable</release>
+      <api>stable</api>
+    </stability>
+    <license uri="http://www.symfony-project.com/license">
+      MIT license
+    </license>
+    <date>2011-05-18</date>
+    <license>MIT</license>
+    <notes>
+       * terrytsang: fixed README
+    </notes>
+  </release>
+  <release>
+    <version>
+      <release>1.0.0</release>
+      <api>1.0.0</api>
+    </version>
+    <stability>
+      <release>stable</release>
+      <api>stable</api>
+    </stability>
+    <license uri="http://www.symfony-project.com/license">
+      MIT license
+    </license>
+    <date>2011-05-18</date>
+    <license>MIT</license>
+    <notes>
+       * terrytsang: First release of the plugin
+    </notes>
+  </release>
+</changelog>
+</package>
