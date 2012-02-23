@@ -1,0 +1,50 @@
+sfNiceFormsPlugin plugin
+==========================
+
+sfNiceFormsPlugin is a symfony plugin that provides the NiceForms form render
+based on the [NiceForms 2.0 javascript library](http://www.emblematiq.com/lab/niceforms/).
+NiceForms v2, a non-intrusive javascript method that allows complete customization of web forms.
+
+Installation
+------------
+
+  * Install the plugin
+
+        $ symfony plugin:install sfNiceFormsPlugin
+
+  * Install assets
+
+        $ symfony plugin:publish-assets
+
+  * Clear the cache
+
+        $ symfony cache:clear
+
+Documentation
+-------------
+
+* Set the theme `app.yml`:
+ 	
+ 	        [yml]
+	        all:
+ 	          niceforms:
+ 	            theme:                                        "default" # 2 themes available now : "default" & "custom"
+ 	
+ 	  * Declare the helper
+	
+ 	        [php]
+ 	        <?php use_helper('niceForms'); ?>
+ 	
+ 	  * To implement niceform form tag
+ 	
+ 	        [php]
+ 	        <?php echo niceforms_form_tag('module/action', array('id' => 'myform', 'name' => 'myform')) ?>
+    
+
+Make Your Own Theme
+--------------------
+  * Open the default.psd in sfNiceFormsPlugin/web/images folder, design the field elements base on your need
+  
+  * Click File -> Save For Web & Devices, choose PNG-24, click 'Save' and select file type as 'HTML and Images'
+  
+  * Replace all identical png files into sfNiceFormsPlugin/web/images/custom/ and you can use your own custom theme now by setting app.yml theme option to 'custom'. Cheers!
